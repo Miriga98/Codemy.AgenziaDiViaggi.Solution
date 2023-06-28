@@ -1,0 +1,33 @@
+{
+  "TitoliDiStudio": [
+    {
+
+      "ID": 1,
+      "Descrizione": "Laurea di primo livello"
+    },
+    {
+
+      "ID": 2,
+      "Descrizione": "Diploma di laurea"
+    },
+    {
+
+      "ID": 3,
+      "Descrizione": "Laurea specialistica a ciclo unico"
+    },
+    {
+
+      "ID": 4,
+      "Descrizione": "Laurea specialistica"
+    },
+    {
+
+      "ID": 5,
+      "Descrizione": "Master universitario di primo livello"
+    }
+
+
+
+  ]
+
+}

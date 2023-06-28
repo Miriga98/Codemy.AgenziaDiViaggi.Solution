@@ -1,0 +1,31 @@
+{
+  "ListaSedi": [
+    {
+      "Descrizione": "Sede Napoli",
+      "Indirizzo": "Via Roma, 1",
+      "Città": "Napoli",
+      "Cap": "84100",
+      "Provincia": "Napoli",
+      "RecapitoTel": "0812233665",
+      "Email": "napoli@bcsoft.com"
+    },
+    {
+      "Descrizione": "Sede Roma",
+      "Indirizzo": "Via Tiburtina, 1",
+      "Città": "Roma",
+      "Cap": "84100",
+      "Provincia": "Roma",
+      "RecapitoTel": "0062233665",
+      "Email": "roma@bcsoft.net"
+    },
+    {
+      "Descrizione": "Sede Bologna",
+      "Indirizzo": "Via Rosa, 14",
+      "Città": "Bologna",
+      "Cap": "84100",
+      "Provincia": "Bologna",
+      "RecapitoTel": "0062233665",
+      "Email": "bologna@bcsoft.net"
+    }
+  ]
+}

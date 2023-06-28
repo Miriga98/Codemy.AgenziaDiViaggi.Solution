@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+ <partial name="_Titolo"/>
+
+<div class="text-center mb-3">
+   
+
+           <h1> Log-in  </h1>
+           
+
+            <form name="login" method="POST">
+                <label name="Nome"> Nome Utente </label>
+                <input name="Nome" placeholder="Mario" asp-for="nome"/>
+                <br />
+                <br />
+                <label name="Cognome"> Cognome Utente </label>
+                <input name="Cognome" placeholder="Rossi" asp-for="cognome" />
+                <br />
+                <br />
+                <label name="password"> Password </label>
+                <input name="password" type="password" asp-for="password" />
+                <br />
+                <br />
+                <input type="submit" value="accedi"/>  
+                
+
+            </form>
+</div>

@@ -1,0 +1,62 @@
+﻿@page
+@model Codemy.AgenziaDiViaggi.Web.Pages.SediModel
+@{
+    ViewData["Title"] = "Sedi";
+}
+
+<table class="table table-bordered table-custom table-responsive md-3">
+    <thead>
+        <tr>
+            <th scope="col">Descrizione</th>
+            <th scope="col">Indirizzo</th>
+            <th scope="col">Città</th>
+            <th scope="col">Provincia</th>
+            <th scope="col">Cap</th>
+            <th scope="col">Recapito Telefonico</th>
+            <th scope="col">Mail</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var item in Model.ListaSedi)
+            {
+                <tr>
+                    <td>@item.Descrizione</td>
+                    <td>@item.Indirizzo</td>
+                    <td>@item.Città</td>
+                    <td>@item.Provincia</td>
+                    <td>@item.Cap</td>
+                    <td>@item.RecapitoTel</td>
+                    <td>@item.Email</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<br />
+
+<div class="container mb-3 col-6 md-5">
+    <form method="post" class="d-flex">
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="Search" asp-for="Ricerca">
+            <select class="form-select ms-2" name="CercaUnaSede" asp-for="CercaUnaSede">
+                <option value="Descrizione">Descrizione</option>
+                <option value="Indirizzo">Indirizzo</option>
+                <option value="Città">Città</option>
+                <option value="Provincia">Provincia</option>
+                <option value="Cap">Cap</option>
+                <option value="RecapitoTel">Recapito Telefonico</option>
+                <option value="Email">e-Mail</option>
+            </select>
+        </div>
+
+        <button class="btn btn-danger ms-2" type="submit">Invia</button>
+    </form>
+    @{
+        if (!String.IsNullOrWhiteSpace(Model.Ricerca) && Model.ListaSedi.Count == 0)
+        {
+            <div class="container-fluid col-5 mt-2 d-flex justify-content-center border border-white" id="error"><b>Nessun risultato trovato.</b><button id="buttonremove" class="btn text-white"><i class="fa-regular fa-circle-xmark" style="color: #000000;"></i></button></div>
+        }
+    }
+</div>
+

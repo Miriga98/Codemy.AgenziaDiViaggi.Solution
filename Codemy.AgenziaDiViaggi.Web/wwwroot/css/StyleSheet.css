@@ -1,0 +1,41 @@
+﻿body {
+   background-image: url('https://images.unsplash.com/photo-1550951298-5c7b95a66bfc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3266&q=80');
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+}
+
+form {
+    position: absolute;
+    border: solid white 2px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 25%;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+input {
+    border: solid navy 2px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+button {
+    border: solid navy 2px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+    button:hover {
+        background-color: navy;
+        color: white;
+        transition: 0.4s;
+    }

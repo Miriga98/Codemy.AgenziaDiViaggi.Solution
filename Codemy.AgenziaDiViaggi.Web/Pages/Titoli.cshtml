@@ -1,0 +1,41 @@
+﻿@page
+@model Codemy.AgenziaDiViaggi.Web.Pages.TitoliModel
+@{
+
+    ViewData["Title"] = "Titoli";
+}
+
+
+<table class="table table-primary">
+
+    <thead>
+        <tr class="table-danger">
+            <th>ID</th>
+            <th>Descrizione</th>
+            
+
+
+        </tr>
+        
+
+    </thead>
+
+    <tbody >
+
+        @foreach (var item in Model.Titoli)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td> @item.Descrizione</td>
+                
+            </tr>
+            
+        }
+
+    </tbody>
+
+</table>
+
+
+
+
